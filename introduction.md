@@ -3,11 +3,18 @@ Introduction
 
 ## What is RHC? 
 
-Robin Hood Cooperative started in 2012 as a wall-street alternative hedge fund that aimed to empower the commonwealth by using the profits of their investments to provide grants to commons-oriented projects and research. RHC is now finalizing its transformation into a Decentralized Autonomous Organization. RHC as a DAO educates members on long-volatility bias investment theory and quantitative finance and rewards them for completing lessons or contributing to investment algorithms that are used to manage the Guild's capital. A portion of the profits accrued from the investments are then used to provide grants to independent projects that benefit the crypto-commons. 
+Robin Hood Cooperative started in 2012 as a wall-street alternative hedge fund with the goal of providing grants to commons-building projects and research using a portion of the profits from its investments. The commons are any shared space or resource or means of production, whether in the form of goods, knowledge, processes, intelligence, rights, procedures, institutes, commodities, ideas, space etc. RHC is now finalizing its transformation into a Decentralized Autonomous Organization. In addition to maintaining pursuit of its original goal of fostering commons-building, RHC as a DAO introduces means by which members can receive education on long-volatility bias investment theory and quantitative finance and earn additional ownership for contributing to the creation of investment algorithms that are deployed on the DAO's behalf.
 
-The birth of Robin Hood as a DAO
+A key aspect to the ethos of Robin Hood Cooperative is the desire to create opportunities in which members can both provide and benefit from mutual aid. The following sections provide an overview of the two primary components of RHC in which mutual aid is most exhibited.
 
-## Why Now?
+### Mutual Aid Through Risking-Together With a Long-Volatility Bias
+TODO: @roberto
+
+### Mutual Aid Through Commons-Building Grants
+The second aspect in which RHC provides an opportunity for mutual aid resides in the ability of the DAO to maintain an account for awarding grants to commons-building projects. The capital of the DAO will be managed entirely by a set of algorithmic trading bots created by members of the DAO, with each bot having its own fee structure that specifies the portion of the profits that are automatically directed into the Commons Fund. As the DAO's investments realize profit, the specified portion of capital is automatically redirected into the Commons Fund, providing the DAO with the ability to receive grant proposals from non-members and members alike and provide awards to projects based upon the value they add to the commons as decided by the democratic voice of the members through the DAO Governance Protocol, a democratic and transparent governance system.
+
+
+### Motivation of RHC as a DAO
 
 We have been in contact with the Finnish Financial Supervisory Authority (Finanssivalvonta, FIN-FSA) since 2015. A new round of discussions started in the spring 2020. After discussions about the aims, structure and next steps of the coop, FIN-FSA informed us (15.9.2020) of their detailed analysis and a provided a conclusion that the coop would need to register or apply for a licence as a so-called Alternative Investment Fund (AIF; which has a specific legal definition) or change its functioning so that the assets can be directly managed by all the members on a day-to-day basis i.e. that there is no centralized “third party” who is providing the investment product/service for the members, there is no exchange service etc. A further complication was that the law on Alternative Investment Funds does not recognize a cooperative, i.e. a cooperative cannot become an AIF. Basically the conclusion was that the coop could not continue functioning as it was.
 

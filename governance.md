@@ -1,5 +1,28 @@
 RHC Governance Protocol v1.0
 
+## Organizational Stack
+
+In my opinion, effective governance does not mean utilizing blockchain for all aspects of the process but instead, applying the technology to areas in which it provides the greatest benefit. The vast majority of social interaction between humans is far too dynamic to allow for completely lossless encoding into programmatic logic. For this reason, the concept of on-chain vs off-chain is widely used in the discussion of blockchain oriented systems. Off-chain simply refers to the aspects of the system that are not enforced by programmatic logic on a smart contract, whereas on-chain refers to portions of the process that actively utilize smart-contract execution on the Ethereum Virtual Machine, resulting in trustless decentralization of the procedure. 
+
+The off-chain component of our governance system is comprised of [Mattermost](https://mattermost.com/), Tuck, the RHC website, and [Github](https://github.com/). 
+
+### DAOHaus
+For aspects of our governance system that will be conducted on-chain, we will be using [DaoHaus](https://daohaus.club/). DaoHaus is a platform for interacting with Decentralized Autonomous Organization enabling smart-contracts. In reality, our smart-contract lives on all of the nodes in the ethereum network, but using DaoHaus provides us with a channel of communication to those nodes, so that whenever we want an action to be executed on the ethereum virtual machine our behalf, we can just use DaoHaus!
+
+## Tuck
+Tuck is a proprietary chat-bot that functions as a facilitator in the off-chain governance process and a window to the state of our DAO smart-contract from within Mattermost. For v1.0 Tuck will only be able to read data from the smart-contract, but in future versions, users will be able to modify the state by submitting proposals, rage quitting, and voting all from Mattermost.
+
+## RHC Site 
+
+## Mattermost
+Mattermost will be our primary platform for the social coordination and communication that is necessary to make organizations function efficiently. Upon becoming a member in the DAO, you'll receive an email with the access link, which will allow you to join the conversation straight from your browser or one of their [Mobile and Desktop Apps](https://mattermost.com/download/#). 
+
+![apps](./assets/mattermost-apps.png)
+
+## Github
+
+Github is a web service built on the open-source version-control tool, git. We will use github primarily to share proposals, membership applications, and other materials related to the development and operations of the coop. In v2.0 we will adopt [Radicle](https://radicle.xyz/), a peer-to-peer alternative to github that allows the DAO to integrate more tightly with the file-sharing system and file-related web3 protocols.
+
 
 ## Becoming a Member 
 
@@ -15,21 +38,7 @@ The membership application will have two main sections; Personal Information and
 
 Additionally, prospective members can apply for Loot Tokens alongside their Membership Token. Loot Tokens represent economic shares of the value of the Coop Bank, without the voting right. The purpose of having both Loot and Membership Tokens is to allow members to invest as much as they would like in the cooperative, without stripping the organization of its democratic nature. The payment for the tokens is added to the coop bank upon acceptance and paid back at exit. 
 
-## Using DaoHaus
 
-In our opinion, effective governance does not mean utilizing blockchain for all aspects of the process but instead, applying the technology to areas in which it provides the greatest benefit. Social interaction between humans is far too dynamic to allow for completely lossless encoding into programmatic logic. For this reason, the concept of on-chain vs off-chain is widely used in the discussion of blockchain oriented systems. Off-chain simply refers to the aspects of the system that are not enforced by programmatic logic on a smart contract, whereas on-chain refers to portions of the process that actively utilize smart-contract execution on the Ethereum Virtual Machine, resulting in trustless decentralization of the procedure. 
-
-For aspects of our governance system that will be conducted on-chain, we will be using [DaoHaus](https://daohaus.club/). DaoHaus is a platform for interacting with Decentralized Autonomous Organization enabling smart-contracts. In reality, our smart-contract lives on all of the nodes in the ethereum network, but using DaoHaus provides us with a channel of communication to those node, so that whenever we want an action to be executed on the ethereum virtual machine our behalf, we can just use DaoHaus!
-
-The off-chain component of our governance system is comprised of [Mattermost](https://mattermost.com/), Tuck, and [Github](https://github.com/). 
-
-Mattermost will be our primary platform for the social coordination and communication that is necessary to make organizations function efficiently. Upon becoming a member in the DAO, you'll receive an email with the access link, which will allow you to join the conversation straight from your browser or one of their [Mobile and Desktop Apps](https://mattermost.com/download/#). 
-
-![apps](./assets/mattermost-apps.png)
-
-Tuck is a proprietary chat-bot that functions as a facilitator in the off-chain governance process and a window to the state of our DAO smart-contract from within Mattermost. For v1.0 Tuck will only be able to read data from the smart-contract, but in future versions, users will be able to modify the state by submitting proposals, rage quitting, and voting all from Mattermost.
-
-Github is a web service built on the open-source version-control tool, git. We will use github primarily to share proposals, membership applications, and other materials related to the development and operations of the coop. In v2.0 we will adopt [Radicle](https://radicle.xyz/), a peer-to-peer alternative to github that allows the DAO to integrate more tightly with the file-sharing system and file-related web3 protocols.
 
 ### Claiming a Blockchain Identity
 
