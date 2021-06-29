@@ -16,17 +16,12 @@ In order to maintain legal compliance with Finnish regulatory agencies, Robinhoo
     7. Related Projects
 3. Governance 
     1. Organizational Architecture
-        - DaoHaus
-        - Tuck
-        - Site
-        - Github
-        - Moloch
-        - Mattermost
-        - Enzyme
+        1. On-Chain Modules
+        2. Off-Chain Modules
     2. Becoming a Member
-    3. Loot vs Shares
-    4. Proposal Protocol
-    5. Co-op Board
+    4. Loot vs Shares
+    5. Proposal Protocol
+    6. Co-op Board
 4. Fund Management Protocols
     1. Strategy Creation Protocol
     1. Yield Funds
@@ -37,14 +32,17 @@ In order to maintain legal compliance with Finnish regulatory agencies, Robinhoo
     3. Building the Protocols
 
 ### TODO
-- [ ] Narrative Description Mutual Aid as both long volatility and commons grants
-- [ ] Decentralized Autonomous Organizations (1.5) deeper explanation of what a DAO is in genearl
-- [ ] Organizational Stack finish
-- [ ] RHC site finish docs
+- [X] Narrative Description Mutual Aid as both long volatility and commons grants
+- [X] Decentralized Autonomous Organizations (1.5) deeper explanation of what a DAO is in genearl
+- [X] Organizational Stack finish
+- [X] RHC site finish docs
+- [X] Coop Board Quarterly Budget Proposal Protocol
+- [X] Coop Board Administration of Enzyme Vaults
+- [X] go in depth on Tuck in governance.md (1.2.1)
+- [X] Merge Strategy creation and yield fund docs
+- [X] Fix get involved
+- [X] Update gov Proposal Protocol 
+- [X] Fix DGP Protocol list of proposal types
+- [X] Fix DGP 1.3 final draft submission, snapshot voting needs to be addressed
+- [ ] becoming a member, need to solidify this flow
 - [ ] fill up governance.md with pictures depicting user experience
-- [ ] Coop Board Quarterly Budget Proposal Protocol
-- [ ] Coop Board Administration of Enzyme Vaults
-- [ ] Update Strategy Proposal Protocol 
-- [ ] go in depth on Tuck in governance.md (1.2.1)
-- [ ] Merge Strategy creation and yield fund docs
-- [ ] Fix get involved

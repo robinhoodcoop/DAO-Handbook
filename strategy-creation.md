@@ -1,68 +1,62 @@
-RHCDAO Strategy Creation Protocol
+Vault-Bot Creation Protocol
 ===============================
-This document outlines the route by which members of the DAO can take in order to contribute to the Strategy Development Team receiving rewards for their contribution contingent upon acceptance of the strategy by the DAO
+
+#### What is a Vault-Bot?
+A Vault-Bot is an algorithmic trading bot written in typescript that automatically rebalances crypto-assets within an Enzyme Smart Vault according to the strategy encoded in the program.
+
+All Smart Vaults offered by RHC will be algorithmically managed by its own Vault-Bot.
+
+Tuck works closely with Vault-Bots by monitoring their performance and maintaining records of the profits and fee-structure in order to trigger the payment of dividends into the Commons-Fund. Initially, this will take place off-chain, but in future versions, Tuck will have an on-chain component that transparently records and collects profit for the Commons-Fund, a ratio of the DAO Bank reserved for commons-building grant awards.
+
+This document outlines the route by which members of the DAO can take in order to propose and create Vault-Bots that they will ultimately get compensated for in Loot if their bot is deployed by the DAO.
 
 
+### Step One: Application
+Vault-Bots are proposed before they are implemented following the DAO Governance Proposal Protocol. Though maintaining a similar structure to the general proposal format, they also include the following additional fields: 
 
-### Step One: Learn
-Upon becoming a member of the DAO, members will have access to two recorded courses that will prepare them for becoming productive members of the Strategy Development Team.  
+- strategy thesis: investment thesis
+- strategy specification: detailed description of strategy
+- allocation requested: amount of capital to place in new fund.
+- fee structure: management fee, performance fee, and entrance fee
+- commons-share: percent of profits to be diverted into the commons fund
+- compensated proposed: amount in DAI to be awarded to team or individual that implements the strategy
 
-The first of which is a Financial Market Theory course, which will explore concepts related to Micro and Macro Market Structure as well as Long-Volatility Investing.
+### Step Two: Proposal Protocol
+Since this is documented in detail elsewhere, i will simply list the major steps in the interest of brevity.
 
-The second course to be offered is a Financial Python Programming Course. This course will focus on entry to intermediate level python with an emphasis on the use of LEAN, an open-source backtesting and live-trading engine.
+1. Proposal Drafting
+2. Community Discussion
+3. Final Draft Submission
+4. DaoHaus Proposal 
+5. Proposal Sponsorship
+6. Governance Call
+7. DaoHaus Voting
+8. Grace Period for Rage Quitting
+9. Proposal Processing
+10. Implementation
 
-### Step Two: Team Assignment 
-Members of the Strategy Development Team will not work alone in developing strategies, but instead, will become part of a team that specializes in a specific aspect of the algorithm. Together, the five teams will be able to coordinate to synthesize fully-automated portfolio management strategies.
+For a more detailed description, see the Governance Document FIXME: hyperlink
 
-Teams:
+### Step Three: A Passing Vault-Bot Proposal
+After the DAO has decided that this is a Vault-Bot they would like to have implemented, the proposer is responsible for assigning and overseeing a team of developers to implementing the strategy into an automated investment bot. In exchange for implementing the strategy, the team is awarded the proposed compensation for the strategy.
 
-- Data Curation:
-    - Responsible for sourcing, cleaning, pre-processing, and storing data to be used by the strategy
-- Feature Analysis:
-    - Responsible for taking the data provided by Data Curation and implementing algorithmic components that generate informative signals based on the conditions of the data
-- Strategy Orchestration:
-    - Responsible for creating prototypical strategies that utilize the information-generating components created by Feature Analysis to piece together the Execution, Portfolio Construction, and Risk-Management aspects of the strategy
-- Deployment Optimization:
-    - Responsible for refactoring and optimizing strategy for execution on LEAN
-- Backtesting:
-    - Responsible for rigorously testing the efficacy of the strategy and creating performance reports to be used in the proposal.
-
-Each team will have a single team leader. Once a member completes the educational courses, they will schedule an interview with the team leaders. After this interview, team leaders will decide where to place the member based on their interests and abilities.
-
-### Step Three: Collaborative Development
-Once a member is part of a team, their team leader will assign tasks based on the currently in-progress strategies. The team leader will also be responsible for coordinating with the other team leaders in order to develop a plan-of-action for each strategy, as well as track contribution among team members. Team leaders will be elected by the DAO and can be removed or replaced at anytime contingent upon the passing of a proposal.
-
-### Step Four: Strategy Creation
-To illustrate the strategy creation process, The following is an example of how a simple strategy would be created
-
-Any member of the DAO can suggest a strategy to be implemented, but ultimately the team leaders (given their experience) will decide which strategies will be part of the development efforts. Suppose the team leaders decide to implement a strategy suggested by a DAO member that buys stocks based on the amount of tweets mentioning that stock over the last 24 hours.
-
-After deciding on the new project and announcing it to the DAO, work begins. 
-
-Data Curation is responsible for creating the algorithmic component that retreives, cleans, and stores the twitter data to be used by the strategy.
-
-Feature Analysis is responsible for creating the algorithmic component that parses the tweets to determine which stock they mention, and maintain a record of the number of mentions for each stock
-
-Strategy Orchestration is responsible for creating the prototypical strategy that uses the two aforementioned components as well as creating the mechanism that decides how many mentions are required for a stock to be bought, how much capital to put on each stock, and when to sell the stock.
-
-Deployment Optimization is responsible for optimizing the prototype so that when launched, it can be executed as quickly and efficiently as possible.
-
-Backtesting is responsible for rigorously testing this strategy and creating a performance report that outlines key statistics such as annual profit-and-loss, max-drawdown, sharpe ratio, etc. 
+To build the Vault-Bot, the team will be using enzyme finance's Software Development Kit for typescript. 
 
 
-### Step Five: Proposal Creation
-Once a strategy is created, all members who worked on the strategy will collaborate to create a Proposal for the deployment of their strategy. This proposal will consist of three main areas; Strategy Performance Summary, Allocation Requested, and Compensation Requested
+### Interacting with the Funds
+Members and non-members alike can invest in the various Smart-Vaults managed by the DAO's Vault-Bots by using https://enzyme.finance/.
 
-- Strategy Performance Summary:
-    - Provided by the Backtesting Team, this section will outline key performance statistics from multiple backtest periods. This section will be heavily utilized by DAO members in order to determine if the risk-appetite of the strategy aligns with the appetite of the DAO as a whole.
-- Allocation Requested:
-    - Provided by the Strategy Orchestration Team, this section identifies the amount of capital requested for allocation on this strategy upon deployment.
-- Compensation Requested:
-    - Provided by the entire group of members who worked on this project (excluding backtesters), this section outlines the number of shares to be given to the members as compensation for the creation of this strategy if it is accepted by the DAO.
+### An Example 
+Consider a simple example of the creation of a crypto-long-volatility index fund its life-cycle within the DAO.
 
-Backtesters are excluded from the compensation requested in order to prevent bias in their testing, for if they are rewarded proportional to the performance of the strategy, they would be incentivized to test the strategies with less rigor, leading to higher performing strategies and higher compensation. Instead, backtesters are compensated on a monthly basis at a rate determined by the DAO through proposals.
-
-### Step Six: Proposal Submission 
-After a proposal has been created, one of the team leaders is elected by the strategy development team to submit the proposal to the DAO for review under the Proposal Protocol.
-
-![strategy creation protocol](./assets/strategy-diagram.png)
+1. A member named Alice has the idea for a long-volatility crypto-asset vault-bot!
+2. Alice starts by drafting up some notes and sending some messages in the mattermost server to ask for opinions and comments on her new idea
+3. After piecing together a proposal draft with the help of the community input she received when asking for opinions, alice submits the draft on github and asks for more feedback.
+4. Once alice has finalized her proposal, she resubmits the final draft and uses DAOHaus to officialy submit her proposal on the smart-contract.
+5. At this time, another member named bob recognizes and appreciates alice's proposal as having value, and sponsors it by depositing 10 DAI into escrow by the smart-contract
+6. Having received a sponsorship, alice's long volatility Vault-Bot proposal will now receive an official vote, and have a governance call scheduled by tuck during the voting period.
+7. During the 7 days following bob's sponsorship, all members can vote on alice's strategy
+8. After the voting period, a 7-day grace period begins in which all members who are unhappy with the outcome and voted on the opposition have the right to exit and redeem all of their shares before the new strategy is contracted.
+9. If alice's Vault-Bot passed a vote, the board will now assign a team to implement the algorithm which will be transparently available to all members through the github.
+10. Once the Vault-Bot is implemented, it is deployed and connected to the enzyme smart-contract, automatically managing the funds according to the proposal. 
+11. At this point, members and non-members alike can now visit enzyme finance and invest in the Smart Vault.
