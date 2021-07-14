@@ -1,32 +1,43 @@
-RHC Governance Protocol v1.0
+RHC Governance Protocol
+======================
 
 ## Organizational Stack
-In our opinion, effective governance does not mean utilizing blockchain for all aspects of the process but instead, applying the technology to areas in which it provides the greatest benefit. The vast majority of social interaction between humans is far too dynamic to allow for completely lossless encoding into programmatic logic. For this reason, the concept of on-chain vs off-chain is widely used in the discussion of blockchain oriented systems. Off-chain simply refers to the aspects of the system that are not enforced by programmatic logic on a smart contract, whereas on-chain refers to portions of the process that actively utilize smart-contract execution on the Ethereum Virtual Machine, resulting in trustless decentralization of the procedure. 
+In our opinion, effective governance does not mean utilizing blockchain for all aspects of the process but instead, applying the technology to areas in which it provides the greatest benefit. 
 
-### On-Chain Modules
+The vast majority of social interaction between humans is far too dynamic to allow for completely lossless encoding into programmatic logic. For this reason, the concept of on-chain vs off-chain is widely used in the discussion of blockchain oriented systems. 
+
+Off-chain simply refers to the aspects of the system that are not enforced by programmatic logic on a smart contract, whereas on-chain refers to portions of the process that actively utilize smart-contract execution on the Ethereum Virtual Machine, resulting in trustless decentralization of the procedure. 
+
+### On-Chain Components
 The on-chain components of our governance system are Molochv2, Gnosis-Safe, and Enzyme Finance.
 
 #### Moloch v2
-(Moloch v2)[https://github.com/MolochVentures/moloch] is a smart-contract developed by MolochVentures which aims to be a 'minimally-viable DAO'. Moloch provides us with the smart-contract that encodes our agreements and relationships as members and provides us with the ability to submit and vote on proposals, as well as exit the DAO before implementation of a proposal whose outcome we voted against (known as rage-quitting, more on this later). Moloch also provides us with the DAO Bank, which holds the pooled value of the DAO.
+[Moloch v2](https://github.com/MolochVentures/moloch) is a smart-contract developed by MolochVentures which aims to be a 'minimally-viable DAO'.
+
+Moloch provides us with a decentralized application that encodes our agreements and relationships as members and provides us with the organizational abilities to submit and vote on proposals, exit the DAO before implementation of a proposal whose outcome we voted against (known as rage-quitting, more on this later), grant ownership of crypto-assets to the DAO, and receive compensation in the form of 'Loot'. 
 
 #### DAOHaus
-To interact with Moloch, we will be using [DaoHaus](https://daohaus.club/). DaoHaus is a platform for interacting with DAO enabling smart-contracts. In reality, our smart-contract in the ethereum network, but using DaoHaus provides us with a channel of communication to those nodes, so that whenever we want an action to be executed on the ethereum virtual machine our behalf, we can just use DaoHaus!
+[DaoHaus](https://daohaus.club/) is a platform for interacting with DAO enabling smart contracts.
+
+In reality, our smart-contract exists only in the ethereum virtual machine, but using DaoHaus provides us with a channel of communication to nodes of that machine, so that whenever we want an action to be executed on the ethereum virtual machine our behalf, we can just use DaoHaus!
 
 #### Gnosis-Safe 
-> Gnosis Safe is a smart contract wallet running on Ethereum that requires a minimum number of people to approve a transaction before it can occur (M-of-N). If for example you have 3 main stakeholders in your business, you are able to set up the wallet to require approval from all 3 people before the transaction is sent. This assures that no single person could compromise the funds.
-\- [Gnosis Safe](https://help.gnosis-safe.io/en/articles/3876456-what-is-gnosis-safe)
+[Gnosis Safe](https://help.gnosis-safe.io/en/articles/3876456-what-is-gnosis-safe) is a smart contract wallet running on Ethereum that requires a minimum number of people to approve a transaction before it can occur (M-of-N). 
 
-In our case, in order to allow for board members to execute time-sensitive transactions on behalf of the DAO, the Coop Board will be in charge of a 3-of-3 Gnosis-Safe. Every fiscal quarter, the board will submit a proposal outlining the subsequent quarter's budget and if approved, the specified funds will be sent from the DAO wallet to the Board Gnosis-Safe, allowing for operating transactions to be executed as efficiently as possible.
+If for example you have 3 main stakeholders in your business, you are able to set up the wallet to require approval from all 3 people before the transaction is sent. This assures that no single person could compromise the funds.
+
+In our case, in order to allow for board members to execute time-sensitive transactions on behalf of the DAO, the Coop Board will be in charge of a 3-of-3 Gnosis-Safe.
+
+Every fiscal quarter, the board will submit a proposal outlining the subsequent quarter's budget and if approved, the specified funds will be sent from the DAO wallet to the Board Gnosis-Safe, allowing for operating transactions to be executed as efficiently as possible.
 
 
 #### Enzyme Finance
-> Enzyme is a decentralised asset management infrastructure built on Ethereum. Using Enzyme Smart Vaults, individuals and communities can build, scale and monetise investment (or execution) strategies that employ the newest innovations in decentralised finance.
-\- [Enzyme Finance](https://enzyme.finance/)
+[Enzyme](https://enzyme.finance/) is a decentralised asset management infrastructure built on Ethereum. Using Enzyme Smart Vaults, individuals and communities can build, scale and monetise investment (or execution) strategies that employ the newest innovations in decentralised finance.
 
 Enzyme enables RHC to provide transparent asset management to non-members and members alike through the Enzyme Market Place. As an end-user of Enzyme, you can allocate capital to any strategy created by RHC, allowing the DAO to receive revenue in the form of management, performance, and entrance fees. 
 
 
-### Off-Chain Modules
+### Off-Chain Components
 The off-chain components of our governance system are Tuck, the RHC site, Mattermost, and Github.
 
 
@@ -39,23 +50,45 @@ The [RHC website](https://www.robinhoodcoop.org/) will primarily be used to host
 ### Mattermost
 [Mattermost](https://mattermost.com/) will be our primary platform for the social coordination and communication that is necessary to make organizations function efficiently. Upon becoming a member in the DAO, you'll receive an email with the access link, which will allow you to join the conversation straight from your browser or one of their [Mobile and Desktop Apps](https://mattermost.com/download/#). 
 
-![apps](./assets/mattermost-apps.png)
 
 ### Github
 
-[Github](https://github.com/) is a web service built on the open-source version-control tool, git. We will use github primarily to share proposals, membership applications, and other materials related to the development and operations of the coop. In a future version, we will adopt [Radicle](https://radicle.xyz/), a peer-to-peer alternative to github that allows the DAO to integrate more tightly with the file-sharing system and file-related web3 protocols.
+[Github](https://github.com/) is a web service built on the open-source version-control tool, git. We will use github primarily to share proposals, membership applications, and other materials related to the development and operations of the coop.
 
+In a future version, we will adopt [Radicle](https://radicle.xyz/), a peer-to-peer alternative to github that allows the DAO to integrate more tightly with the file-sharing system and file-related web3 protocols.
 
 
 ## Becoming a Member 
 
-An individual can become a member of the cooperative by submitting an off-chain [membership application](FIXME: put robinhood member app page) and an on-chain proposal for membership through DAOHaus. Application responses will be used by Tuck to generate a membership proposal which, with the exception of omitting steps 1.1-1.3, will follow the DGP Protocol for voting and approval by the DAO. Once the membership proposal has been created, the applicant will need to login to DAOHaus and submit the membership proposal on-chain, depositing the tribute or investment they are offering in exchange for membership.
+An individual can become a member of the cooperative by submitting an off-chain [membership application](https://www.robinhoodcoop.org/apply) and an on-chain proposal for membership through DAOHaus.
 
-The membership application will have two main sections; Personal Information and Membership Proposition. In order to maintain legal compliance, the personal information section will collect information to fulfill the KYC, or, Know-Your-Customer, regulatory standard. This information is confidential and will not be shared with third-parties or other members of the DAO. The Membership Proposition section will be comprised of the following prompts, the responses to which should help provide the DAO with the information they need to assess the potential value of adding the applicant as a member:
+Application responses will be used by Tuck to generate a membership proposal which, with the exception of omitting steps 1.1-1.3, will follow the DGP Protocol (see below) for voting and approval by the DAO. Once the membership proposal has been created, the applicant will need to login to DAOHaus and submit the membership proposal on-chain, depositing the tribute or investment they are offering in exchange for membership.
+
+The membership application will have two main sections; Personal Information and Membership Proposition. In order to maintain legal compliance, the personal information section will collect information to fulfill the KYC, or, Know-Your-Customer, regulatory standard. This information is confidential and will not be shared with third-parties or other members of the DAO. 
+
+The Membership Proposition section will be comprised of the following prompts, the responses to which should help provide the DAO with the information they need to assess the potential value of adding the applicant as a member:
 
 - Please give a short introduction about yourself.
 - Why do you want to join Robin Hood?
 - How can you contribute to the continued growth and sustainability of Robin Hood DAO and the fulfillment of its main goals (mutual-aid through 'risking-together' and commons-oriented empowerment through grant funding)
+
+Once the membership application has been submitted, the next step for the applicant is to submit a proposal for membership through DaoHaus. 
+
+Note: Before submitting an application, be sure to review the *Claiming a Blockchain Identity* and *Logging into DAOHaus* sections to learn about wallets and how to login to DAOHaus.
+
+In order to submit a proposal, you'll want to first navigate to the [DAO Proposal Page](https://app.daohaus.club/dao/0x2a/0x7d317054229031579483f0d09384e9c64982b346/proposals) and create a new proposal
+
+![submitting membership proposal](../assets/membership-proposal.png)
+
+Note that the proposal fields must be specified as follows: 
+
+- Title: Proposal For Membership
+- Description: <applicant name>
+- Shares Requested: <number of shares requested>
+- Tribute Offered: <Shares Requested * 35>
+- Link: www.robinhoodcoop.org/apply
+
+You'll notice through the tribute offered field that shares are worth 35 DAI each.
 
 Upon being granted membership by the DAO, new members will receive one Membership Token, referred to in DAOHaus as a share. This token is an ERC-20 standard crypto-token representing a non-transferrable membership right; a pro-rata share of the value of the DAO Bank, and a voting right.
 
@@ -66,11 +99,11 @@ Additionally, prospective members can apply for Loot Tokens alongside their Memb
 
 Before you are able to interact with DaoHaus though, you need to claim your blockchain identity. When we talk about a blockchain identity, we are talking about an identification system that uses private and public keys to verify and guarantee the identity of an entity on the blockchain. An intuitive way to think about how your blockchain identity is stored is by thinking of the way in which we use business cards and drivers licenses. Your public key is like a business card, which you'd want to be published and shared as much as possible so that other people know how to get in contact with you. Your private key on the other hand, is like your drivers license, and this component is not something you want published anyhwere at all. In fact, you'd want to be the only person who has your drivers license (or private key) so that anytime someone contacts you using the information on your business card, you can verify your identity to them using the posession of your drivers license. Public and private keys are just a way to maintain your identity and interact with others in the world of blockchain.
 
-> Technical Note: we don't actually use public keys to share our identities, we share addresses, which are the last 20 bytes of the hashes of the public keys
+Technical Note: we don't actually use public keys to share our identities, we share addresses, which are the last 20 bytes of the hashes of the public keys
 
 Since this is your identity we are talking about and you need to posess proof of your identity to trade, buy, or sell crypto-currency, it's quite important to emphasize the need for proper digital security practices. Wallets are applications that store your private keys, and while they come in many different flavors, they can generally be boiled down to two different categories; hot and cold wallets. Hot wallets are connected to the internet and therefore offer convenience when trying to interact with blockchains, but in exchange for this convenience, there is generally a much greater risk of cybertheft as anyone on the internet can try to login to your account (which is why you should always use a password manager to prevent password cracking or guessing). Cold wallets on the other hand are not connected to the internet and as such, are generally far safer than hot wallets. Cold wallets typically come in the form of a hardware (see [trezor](https://shop.trezor.io) and [ledger](https://ledger.com)) or paper wallet. For storing large amounts of crypto-currency, its always advisable to choose a cold-wallet, but for small transactions and verification of identity on browser-based applications, hot-wallets are generally more convenient.
 
-For interaction with the DAO, you can use metamask or any walletconnect supported wallet. If this is your first wallet, we suggest using metamask; an ethereum hot-wallet that is integrated with your web-browser in order to allow for easy interaction with smart contracts. In addition to being able to store Ethereum, metamask can store any Ethereum (ERC-20, ERC-721, etc.) based coins, including the Loot and Membership tokens that are issued by the DAO. To install the browser plugin and setup an account, visit https://metamask.io/download.html.
+For interaction with the DAO, you can use metamask or any walletconnect supported wallet. If this is your first wallet, we suggest using metamask; an ethereum hot-wallet that is integrated with your web-browser in order to allow for easy interaction with smart contracts. In addition to being able to store Ethereum, metamask can store any Ethereum (ERC-20, ERC-721, etc.) based coins, including the Loot and Membership tokens that are issued by the DAO. To install the browser plugin and setup an account, visit [Metamask](https://metamask.io/download.html).
 
 
 ### Customizing your Identity With IDX (formerly 3box)
@@ -83,12 +116,11 @@ To login into the on-chain platform using your newly created identity, you will 
 
 
 ### Accessing the DAO
-# FIXME: need to check with board to decide on parameters before launching new one
-Once you've logged in, you'll notice that there are a plethora of other DAOs that you can investigate and join! Magic internet communities as they call them! Once you've spent some time looking around, you'll want to head to the [Robinhood DAO Home Page](https://app.daohaus.club/dao/0x2a/0x7ebe44c487ee18994a9bb483163d6efe51947bd4). This is where you can view and interact with the state of our DAO.
+Once you've logged in, you'll notice that there are a plethora of other DAOs that you can learn about and submit proposals for! The majority of these magic internet communities are also built using Moloch so you'll find that much of what you'll learn as a member of RHC will equip you with the ability to explore the wider DAO community as a whole! Once you've spent some time looking around, you'll want to head to the [Robinhood DAO Home Page](https://app.daohaus.club/dao/0x2a/0x7d317054229031579483f0d09384e9c64982b346). This is where you can view and interact with the state of our DAO.
 
 ### The DAO Bank
-We talked a little about blockchain identities and how your identity can be tied to the ownership of crypto-assets, but we never said that identites were only for humans! In fact, any entity that interacts with the blockchain must have an identity, whether it's a smart-contract or an individual. Thus, the DAO possesses its own identiy, or pair of public/private keys which it can use to buy, sell, or trade crypto-assets. The interesting idea here is that as opposed to a single owner needing to verify transactions and approve the use of their private keys for interacting with the blockchain, the use of the DAO's private keys is dictated by the democratic voting process outlined in the DGP Protocol. This means that the DAO can own assets, the same way a bank would, except instead of a single centralized group getting to call the shots on when and what purchases should be made, the coop decides together. To view the DAO Bank, click the 'View Bank' button on the DAO Home Page. 
-![bank-button](./assets/bank-button.png)
+We talked a little about blockchain identities and how your identity can be tied to the ownership of crypto-assets, but we never said that identites were only for humans! In fact, any entity that interacts with the blockchain must have an identity, whether it's a smart-contract, trading-bot, or a human. Thus, the DAO possesses its own identiy, or pair of public/private keys which it can use to buy, sell, or trade crypto-assets. The interesting idea here is that as opposed to a single owner needing to verify transactions and approve the use of their private keys for interacting with the blockchain, the use of the DAO's private keys is dictated by the democratic voting process outlined in the DGP Protocol. This means that the DAO can own assets, the same way a bank would, except instead of a single centralized group getting to call the shots on when and what purchases should be made, the coop decides together. To view the DAO Bank, click the 'View Bank' button on the DAO Home Page. 
+![bank-button](../assets/bank-button.png)
 
 ## DGP Protocol
 In any organization, decisions must be made. In RHC as a DAO, these decisions will be made by the members of the cooperative using the **DGP Protocol**. Though built using [Moloch](https://moloch.vc/), this protocol is also inspired by the [Index Coop's IIP Contribution Process](https://gov.indexcoop.com/t/iip-contribution-process/86).
@@ -111,12 +143,14 @@ Members and non-members alike have the right to use the Proposal Protocol to mak
     - Swapping tokens with the DAO Bank.
 5. Guild Kick:
     - Forcing a member to Rage Quit.
+6. Signal:
+    - Create an announcement that will reside on the blockchain indefinitely.
 
-![proposal-types](./assets/proposal-types.png)
+![proposal-types](../assets/proposal-types.png)
 
 Each member of the co-op posesses one vote (more on this in next section), and for any given proposal, the lifecycle of the proposal can be visualized as:
 
-![proposal-cycle](./assets/proposal-cycle.png)
+![proposal-cycle](../assets/proposal-cycle.png)
 
 
 ### 1 Informal Discussion Phase
@@ -131,7 +165,7 @@ The first step in this process entails drafting a preliminary proposal to be use
 3. **Create your own Proposal Draft in [Markdown](https://guides.github.com/features/mastering-markdown/)**
     - DGP-X can be used as a template!
     - If your DGP requires images, the image files should be included in a subdirectory of the assets folder for that DGP as follows: assets/dgp-X (for dgp X). When linking to an image in the DGP, use relative links such as ../assets/iip-X/image.png.
-4. **Submit a [Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)* to this repository*
+4. **Submit a [Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) to this repository**
    
 We can't expect ourselves to create great proposals on the first try, democractic governance isn't a trivial process! The first Pull Request you submit is intended to be a rough draft that other members can use to help you evaluate the clarity and strength of your proposal before putting it into a final draft.
  
@@ -159,18 +193,17 @@ In order to create a real-time experience where we can share ideas, criticisms, 
 
 After you've submitted your final draft, the next step entails visiting [DaoHaus](https://app.daohaus.club/) and submitting a proposal to the DAO smart-contract. From the DAO Home Page you should be able to access the proposal tab on the left.
 
-![proposal-tab](./assets/proposal-tab.png)
+![proposal-tab](../assets/proposal-tab.png)
 
 You should then be prompted to choose a proposal type and submit a proposal! 
 
 *Its important to always make sure that you include the url for the mattermost channel Tuck created in the link field*:
-![proposal-link](./assets/proposal-link.png)
+![proposal-link](../assets/proposal-link.png)
 
 #### 2.2 Proposal Sponsorship (On-Chain)
 Anyone can submit a proposal to the DAO, whether it is a current member, prospective member, or grant applicant, but in order for the DAO to actually vote on it, it must first be sponsored by a current member. You can sponsor your own proposal, or a proposal belonging to someone else if you support it. Sponsoring a proposal requires a 5 DAI Deposit, 4 DAI of which is returned after the proposal is processed, regardless of the outcome. The remaining 1 DAI is reserved to incentivize processing the proposal once it is ready.
 
-FIXME: insert picture 
-![sponsor](./assets/sponsor.png)
+![sponsor](../assets/sponsor.png)
 
 #### 2.3 Governance Call (Off-Chain)
 After your proposal has been sponsored, a 5-day voting period will begin, and users will have 5 days to submit their vote. As soon as your proposal is sponsored, Tuck will announce it to the coop and send a link for members to use to schedule the Governance Call. 36 hours after Tuck's announcement, Tuck will schedule a call for the soonest available time in which the greatest amount of members are available and announce it to the coop. Tuck will then send a reminder 1 hour before the meeting and a jitsi link when the meeting begins.
@@ -179,7 +212,7 @@ After your proposal has been sponsored, a 5-day voting period will begin, and us
 #### 2.4 DaoHaus Voting (On-Chain)
 During the 5-day voting period, members have the right to vote on the proposal through DaoHaus. You can access the proposals by clicking the 'view proposals' button in the DAO Home Page.
 
-![view-proposal](./assets/view-proposal.png)
+![view-proposal](../assets/view-proposal.png)
 
 You are only allowed to vote once on a proposal, so it's advised you wait until after the governance call to beable to hear everyone's arguments. 
 
@@ -189,16 +222,16 @@ You are only allowed to vote once on a proposal, so it's advised you wait until 
 In order to protect members from 51% attacks and from supporting proposals they vehemently oppose, there will be a 'rage-quit' feature. At the end of the voting period, a 3-day **grace period** begins before implementation of the proposal. The purpose of the grace period is to allow members to rage quit before the changes from the proposal are implemented. During this period members who voted **No** have the opportunity to exit the co-op and collect their proportional share of tokens from the coop bank. If a proposal fails, members who voted **Yes** have the oportunity to exit and collect their shares.
 
 You can access the ragequit functionality by navigating to the profile tab
-![profile-tab.png](./assets/profile-tab.png
+![profile-tab.png](../assets/profile-tab.png
 
 and clicking the drop-down menu on the right
-![ragequit](./assets/rage-quit.png)
+![ragequit](../assets/rage-quit.png)
 
 
 ##### 2.6 Proposal Processing
 
 Once the grace-period has ended, anyone, even non-members can process the proposal to count the votes and finalize the state of the proposal. By processing the proposal, they are committing to implementing the changes proposed, and as such, get rewarded with 1% of the sponsorship deposit.
-FIXME: add picture
+![process](../assets/process.png)
 
 ## 3 Implementation
 

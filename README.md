@@ -46,3 +46,5 @@ In order to maintain legal compliance with Finnish regulatory agencies, Robinhoo
 - [X] Fix DGP 1.3 final draft submission, snapshot voting needs to be addressed
 - [ ] becoming a member, need to solidify this flow
 - [ ] fill up governance.md with pictures depicting user experience
+- [ ] Organize better into seperate pages, finish ToC
+- [ ] Proofread (someone that isnt theo pls)

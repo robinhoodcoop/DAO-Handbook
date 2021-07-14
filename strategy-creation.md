@@ -35,7 +35,7 @@ Since this is documented in detail elsewhere, i will simply list the major steps
 9. Proposal Processing
 10. Implementation
 
-For a more detailed description, see the Governance Document FIXME: hyperlink
+For a more detailed description, see the Governance Section
 
 ### Step Three: A Passing Vault-Bot Proposal
 After the DAO has decided that this is a Vault-Bot they would like to have implemented, the proposer is responsible for assigning and overseeing a team of developers to implementing the strategy into an automated investment bot. In exchange for implementing the strategy, the team is awarded the proposed compensation for the strategy.
