@@ -41,6 +41,7 @@ In an effort to provide our members with the knowledge and tools necessary to cr
 
 After completing these courses, members will be well equipped to begin contributing to the creation of Vault-Bots as part of either the Strategy Design or Strategy Engineering Working Group depending on their skill-set and course taken.
 
+
 Both courses will be available in a digital format so that members can have access to the content at anytime.
 
 In order to incentivize participation in these courses and contribution to Vault-Bot development, it is possible for the coop to propose and vote on reward structures that use loot tokens to reward members for completing courses. 

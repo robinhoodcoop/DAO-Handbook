@@ -100,13 +100,17 @@
 <ul>
 <li>Forcing a member to Rage Quit.</li>
 </ul></li>
+<li>Signal:
+<ul>
+<li>Create an announcement that will reside on the blockchain indefinitely.</li>
+</ul></li>
 </ol>
 <figure>
 <img src="../assets/proposal-types.png" alt="" /><figcaption>proposal-types</figcaption>
 </figure>
 <p>Each member of the co-op posesses one vote (more on this in next section), and for any given proposal, the lifecycle of the proposal can be visualized as:</p>
 <figure>
-<img src="./assets/proposal-cycle.png" alt="" /><figcaption>proposal-cycle</figcaption>
+<img src="../assets/proposal-cycle.png" alt="" /><figcaption>proposal-cycle</figcaption>
 </figure>
 <h3 id="informal-discussion-phase">1 Informal Discussion Phase</h3>
 <h4 id="proposal-drafting-off-chain">1.1 Proposal Drafting (Off-Chain)</h4>
@@ -125,7 +129,7 @@
 <li>DGP-X can be used as a template!</li>
 <li>If your DGP requires images, the image files should be included in a subdirectory of the assets folder for that DGP as follows: assets/dgp-X (for dgp X). When linking to an image in the DGP, use relative links such as ../assets/iip-X/image.png.</li>
 </ul></li>
-<li>**Submit a <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests">Pull Request</a>* to this repository*</li>
+<li><strong>Submit a <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests">Pull Request</a> to this repository</strong></li>
 </ol>
 <p>We can’t expect ourselves to create great proposals on the first try, democractic governance isn’t a trivial process! The first Pull Request you submit is intended to be a rough draft that other members can use to help you evaluate the clarity and strength of your proposal before putting it into a final draft.</p>
 <h4 id="community-discussion-off-chain">1.2 Community Discussion (Off-Chain)</h4>
@@ -142,27 +146,29 @@
 <h4 id="daohaus-proposal-on-chain">2.1 DaoHaus Proposal (On-Chain)</h4>
 <p>After you’ve submitted your final draft, the next step entails visiting <a href="https://app.daohaus.club/">DaoHaus</a> and submitting a proposal to the DAO smart-contract. From the DAO Home Page you should be able to access the proposal tab on the left.</p>
 <figure>
-<img src="./assets/proposal-tab.png" alt="" /><figcaption>proposal-tab</figcaption>
+<img src="../assets/proposal-tab.png" alt="" /><figcaption>proposal-tab</figcaption>
 </figure>
 <p>You should then be prompted to choose a proposal type and submit a proposal!</p>
-<p><em>Its important to always make sure that you include the url for the mattermost channel Tuck created in the link field</em>: <img src="./assets/proposal-link.png" alt="proposal-link" /></p>
+<p><em>Its important to always make sure that you include the url for the mattermost channel Tuck created in the link field</em>: <img src="../assets/proposal-link.png" alt="proposal-link" /></p>
 <h4 id="proposal-sponsorship-on-chain">2.2 Proposal Sponsorship (On-Chain)</h4>
 <p>Anyone can submit a proposal to the DAO, whether it is a current member, prospective member, or grant applicant, but in order for the DAO to actually vote on it, it must first be sponsored by a current member. You can sponsor your own proposal, or a proposal belonging to someone else if you support it. Sponsoring a proposal requires a 5 DAI Deposit, 4 DAI of which is returned after the proposal is processed, regardless of the outcome. The remaining 1 DAI is reserved to incentivize processing the proposal once it is ready.</p>
-<p>FIXME: insert picture <img src="./assets/sponsor.png" alt="sponsor" /></p>
+<figure>
+<img src="../assets/sponsor.png" alt="" /><figcaption>sponsor</figcaption>
+</figure>
 <h4 id="governance-call-off-chain">2.3 Governance Call (Off-Chain)</h4>
 <p>After your proposal has been sponsored, a 5-day voting period will begin, and users will have 5 days to submit their vote. As soon as your proposal is sponsored, Tuck will announce it to the coop and send a link for members to use to schedule the Governance Call. 36 hours after Tuck’s announcement, Tuck will schedule a call for the soonest available time in which the greatest amount of members are available and announce it to the coop. Tuck will then send a reminder 1 hour before the meeting and a jitsi link when the meeting begins.</p>
 <h4 id="daohaus-voting-on-chain">2.4 DaoHaus Voting (On-Chain)</h4>
 <p>During the 5-day voting period, members have the right to vote on the proposal through DaoHaus. You can access the proposals by clicking the ‘view proposals’ button in the DAO Home Page.</p>
 <figure>
-<img src="./assets/view-proposal.png" alt="" /><figcaption>view-proposal</figcaption>
+<img src="../assets/view-proposal.png" alt="" /><figcaption>view-proposal</figcaption>
 </figure>
 <p>You are only allowed to vote once on a proposal, so it’s advised you wait until after the governance call to beable to hear everyone’s arguments.</p>
 <h5 id="grace-period-and-rage-quitting">2.5 Grace Period and Rage Quitting</h5>
 <p>In order to protect members from 51% attacks and from supporting proposals they vehemently oppose, there will be a ‘rage-quit’ feature. At the end of the voting period, a 3-day <strong>grace period</strong> begins before implementation of the proposal. The purpose of the grace period is to allow members to rage quit before the changes from the proposal are implemented. During this period members who voted <strong>No</strong> have the opportunity to exit the co-op and collect their proportional share of tokens from the coop bank. If a proposal fails, members who voted <strong>Yes</strong> have the oportunity to exit and collect their shares.</p>
-<p>You can access the ragequit functionality by navigating to the profile tab [profile-tab.png](./assets/profile-tab.png</p>
-<p>and clicking the drop-down menu on the right <img src="./assets/rage-quit.png" alt="ragequit" /></p>
+<p>You can access the ragequit functionality by navigating to the profile tab [profile-tab.png](../assets/profile-tab.png</p>
+<p>and clicking the drop-down menu on the right <img src="../assets/rage-quit.png" alt="ragequit" /></p>
 <h5 id="proposal-processing">2.6 Proposal Processing</h5>
-<p>Once the grace-period has ended, anyone, even non-members can process the proposal to count the votes and finalize the state of the proposal. By processing the proposal, they are committing to implementing the changes proposed, and as such, get rewarded with 1% of the sponsorship deposit. FIXME: add picture</p>
+<p>Once the grace-period has ended, anyone, even non-members can process the proposal to count the votes and finalize the state of the proposal. By processing the proposal, they are committing to implementing the changes proposed, and as such, get rewarded with 1% of the sponsorship deposit. <img src="../assets/process.png" alt="process" /></p>
 <h2 id="implementation">3 Implementation</h2>
 <p>During Implementation, the changes or actions put forth by the proposal are put into place. It is the responsibility of the board to ensure that changes are made, and in future versions, higher degrees of automation will be employed such changes can be implemented automatically without any human intervention.</p>
 <h2 id="dao-update-calls">DAO Update Calls</h2>
