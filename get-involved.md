@@ -6,35 +6,6 @@ Get Involved
 
 There's plenty of ways to get involved, whether its by contributing to the conversations and debates around proposals and participating in the proposal protocol, or joining a Working Group and earning Loot in exchange for facilitating the growth and maintenance of the Robin Hood Community!
 
-## Working Groups
-
-#### Coop Board
-
-Key Tasks:
-
-#### Community Management
-
-Key Tasks:
-#### Design/UX
-
-Key Tasks:
-#### Business Development
-
-Key Tasks:
-#### Growth and Investor Relations
-
-Key Tasks:
-#### Strategy Design
-
-Key Tasks:
-#### Strategy Engineering
-
-Key Tasks:
-#### Web 3.0 Engineering
-
-Key Tasks:
-
-
 ## Educational Opportunities
 
 In an effort to provide our members with the knowledge and tools necessary to create automated investment strategies that can be proposed as Vault-Bots, we will begin two new education initatives.
