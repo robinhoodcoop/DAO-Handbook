@@ -32,6 +32,7 @@ Note that the proposal fields must be specified as follows:
 - Tribute Offered: <Shares Requested * 35>
 - Link: www.robinhoodcoop.org/apply
 
+<<<<<<< HEAD
 You'll notice through the tribute offered field that shares are worth 35 DAI each.
 
 Upon being granted membership by the DAO, new members will receive one Membership Token, referred to in DAOHaus as a share. This token is an ERC-20 standard crypto-token representing a non-transferrable membership right; a pro-rata share of the value of the DAO Bank, and a voting right.
@@ -70,6 +71,9 @@ Once you've logged in, you'll notice that there are a plethora of other DAOs tha
 There's plenty of ways to get involved, whether its by contributing to the conversations and debates around proposals and participating in the proposal protocol, or joining a Working Group and earning Loot in exchange for facilitating the growth and maintenance of the Robin Hood Community!
 
 ### Educational Opportunities
+=======
+## Educational Opportunities
+>>>>>>> 7c13dc5b724087309e6d6ef642d3e13a93403c7a
 
 In an effort to provide our members with the knowledge and tools necessary to create automated investment strategies that can be proposed as Vault-Bots, we will begin two new education initatives.
 
