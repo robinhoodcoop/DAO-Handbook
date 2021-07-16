@@ -1,11 +1,11 @@
 <h1 id="vault-bot-creation-protocol">Vault-Bot Creation Protocol</h1>
-<h4 id="what-is-a-vault-bot">What is a Vault-Bot?</h4>
+<h2 id="what-is-a-vault-bot">What is a Vault-Bot?</h2>
 <p>A Vault-Bot is an algorithmic trading bot written in typescript that automatically rebalances crypto-assets within an Enzyme Smart Vault according to the strategy encoded in the program.</p>
 <p>All Smart Vaults offered by RHC will be algorithmically managed by its own Vault-Bot.</p>
 <p>Tuck works closely with Vault-Bots by monitoring their performance and maintaining records of the profits and fee-structure in order to trigger the payment of dividends into the Commons-Fund. Initially, this will take place off-chain, but in future versions, Tuck will have an on-chain component that transparently records and collects profit for the Commons-Fund, a ratio of the DAO Bank reserved for commons-building grant awards.</p>
 <p>This document outlines the route by which members of the DAO can take in order to propose and create Vault-Bots that they will ultimately get compensated for in Loot if their bot is deployed by the DAO.</p>
-<h3 id="step-one-application">Step One: Application</h3>
-<p>Vault-Bots are proposed before they are implemented following the DAO Governance Proposal Protocol. Though maintaining a similar structure to the general proposal format, they also include the following additional fields:</p>
+<h2 id="step-one-designing-a-strategy">Step One: Designing a Strategy</h2>
+<p>Vault-Bots are proposed before they are implemented following the DAO Governance System Protocol. Though maintaining a similar structure to the general proposal format, they also include the following additional fields:</p>
 <ul>
 <li>strategy thesis: investment thesis</li>
 <li>strategy specification: detailed description of strategy</li>
@@ -14,7 +14,8 @@
 <li>commons-share: percent of profits to be diverted into the commons fund</li>
 <li>compensated proposed: amount in DAI to be awarded to team or individual that implements the strategy</li>
 </ul>
-<h3 id="step-two-proposal-protocol">Step Two: Proposal Protocol</h3>
+<p>Though any member can propose a Vault-Bot, members of the Strategy Design working group will focus on maintaining a cohesive system in which investment hypothesis and strategy specification are built through collaboration.</p>
+<h2 id="step-two-proposing-a-strategy">Step Two: Proposing a Strategy</h2>
 <p>Since this is documented in detail elsewhere, i will simply list the major steps in the interest of brevity.</p>
 <ol type="1">
 <li>Proposal Drafting</li>
@@ -28,24 +29,24 @@
 <li>Proposal Processing</li>
 <li>Implementation</li>
 </ol>
-<p>For a more detailed description, see the Governance Document FIXME: hyperlink</p>
-<h3 id="step-three-a-passing-vault-bot-proposal">Step Three: A Passing Vault-Bot Proposal</h3>
-<p>After the DAO has decided that this is a Vault-Bot they would like to have implemented, the proposer is responsible for assigning and overseeing a team of developers to implementing the strategy into an automated investment bot. In exchange for implementing the strategy, the team is awarded the proposed compensation for the strategy.</p>
-<p>To build the Vault-Bot, the team will be using enzyme finance’s Software Development Kit for typescript.</p>
-<h3 id="interacting-with-the-funds">Interacting with the Funds</h3>
+<p>For a more detailed description, see the Governance System Document.</p>
+<h2 id="step-three-implementing-a-strategy">Step Three: Implementing a Strategy</h2>
+<p>After the DAO has decided that this is a Vault-Bot they would like to have implemented, the proposer is responsible for working with a group of the Strategy Engineering Working Group to coordinate implementation of the strategy specification. In exchange for implementing the strategy, the designers and engineers responsible are awarded the proposed compensation for the strategy.</p>
+<p>To build the Vault-Bot, the team will be using Enzyme Finance’s Software Development Kit for typescript.</p>
+<h2 id="interacting-with-the-smart-vaults">Interacting With The Smart Vaults</h2>
 <p>Members and non-members alike can invest in the various Smart-Vaults managed by the DAO’s Vault-Bots by using https://enzyme.finance/.</p>
-<h3 id="an-example">An Example</h3>
+<h2 id="an-example">An Example</h2>
 <p>Consider a simple example of the creation of a crypto-long-volatility index fund its life-cycle within the DAO.</p>
 <ol type="1">
-<li>A member named Alice has the idea for a long-volatility crypto-asset vault-bot!</li>
-<li>Alice starts by drafting up some notes and sending some messages in the mattermost server to ask for opinions and comments on her new idea</li>
+<li>After taking the financial markets course and joining the Strategy Desgin Working Group, Alice has the idea for a long-volatility crypto-asset vault-bot!</li>
+<li>Alice starts by drafting up some notes and sending some messages in the Strategy Design section of the mattermost server to ask for opinions and comments on her new idea</li>
 <li>After piecing together a proposal draft with the help of the community input she received when asking for opinions, alice submits the draft on github and asks for more feedback.</li>
 <li>Once alice has finalized her proposal, she resubmits the final draft and uses DAOHaus to officialy submit her proposal on the smart-contract.</li>
 <li>At this time, another member named bob recognizes and appreciates alice’s proposal as having value, and sponsors it by depositing 10 DAI into escrow by the smart-contract</li>
 <li>Having received a sponsorship, alice’s long volatility Vault-Bot proposal will now receive an official vote, and have a governance call scheduled by tuck during the voting period.</li>
 <li>During the 7 days following bob’s sponsorship, all members can vote on alice’s strategy</li>
 <li>After the voting period, a 7-day grace period begins in which all members who are unhappy with the outcome and voted on the opposition have the right to exit and redeem all of their shares before the new strategy is contracted.</li>
-<li>If alice’s Vault-Bot passed a vote, the board will now assign a team to implement the algorithm which will be transparently available to all members through the github.</li>
+<li>If alice’s Vault-Bot passed a vote, Alice will coordinate with the Strategy Enginnering Working Group to implement the algorithm which will be transparently available to all members through the github.</li>
 <li>Once the Vault-Bot is implemented, it is deployed and connected to the enzyme smart-contract, automatically managing the funds according to the proposal.</li>
 <li>At this point, members and non-members alike can now visit enzyme finance and invest in the Smart Vault.</li>
 </ol>

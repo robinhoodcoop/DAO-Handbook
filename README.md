@@ -8,43 +8,52 @@ In order to maintain legal compliance with Finnish regulatory agencies, Robinhoo
 ## Table of Contents
 1. Introduction  
     1. What is RHC?
+        - Mutual Aid Through Risking Together With a Long-Volatility Bias
+        - Mutual Aid Through Commons-Building Grants
     2. Motivation of RHC as a DAO
     3. Ethereum
     4. Smart Contracts
     5. Decentralized Autonomous Organizations
-    6. Blockchain Identity
-    7. Related Projects
-3. Governance 
-    1. Organizational Architecture
-        1. On-Chain Modules
-        2. Off-Chain Modules
-    2. Becoming a Member
-    4. Loot vs Shares
-    5. Proposal Protocol
-    6. Co-op Board
-4. Fund Management Protocols
-    1. Strategy Creation Protocol
-    1. Yield Funds
-    2. Yield Share 
-6. Get Involved
-    1. Financial Markets Course
-    2. Enzyme Trading Bot Course
-    3. Building the Protocols
+    6. Related Projects
+2. Organizational Architecture
+    1. Organizational Stack 
+        - On-Chain Components
+        - Off-Chain Components
+    2. Working Groups
+        - The Board
+        - Community Management
+        - Design/UX
+        - Growth and Grant Recipient/Investor Relations
+        - Strategy Design
+        - Strategy Engineering
+        - Web 3.0 Engineering
+    3. DAO Update Calls
+3. Governance System
+    1. Informal Discussion Phase
+        - Proposal Drafting
+        - Community Discussion
+        - Final Draft Submission
+    2. Debate and Smart Contract Voting
+        - DAOHaus Proposal
+        - Proposal Sponsorship
+        - Governance Call
+        - DAOHaus Voting
+        - Grace Period and Rage Quitting
+        - Proposal Processing
+    3. Implementation
+4. Vault-Bot Creation Protocol
+    1. What is a Vault-Bot?
+    2. Step One: Designing a Strategy
+    3. Step Two: Proposing a Strategy
+    4. Step Three: Implementing a Strategy
+    5. Interacting With The Smart Vaults
+    6. An Example
+5. Getting Involved
+    1. Applying for Membership
+        - Claiming a Blockchain Identity
+        - Customizing Your Identity
+        - Logging into DAOHaus
+        - Accessing the DAO
+    2. Contributing to the DAO
+        - Educational Opportunities 
 
-### TODO
-- [X] Narrative Description Mutual Aid as both long volatility and commons grants
-- [X] Decentralized Autonomous Organizations (1.5) deeper explanation of what a DAO is in genearl
-- [X] Organizational Stack finish
-- [X] RHC site finish docs
-- [X] Coop Board Quarterly Budget Proposal Protocol
-- [X] Coop Board Administration of Enzyme Vaults
-- [X] go in depth on Tuck in governance.md (1.2.1)
-- [X] Merge Strategy creation and yield fund docs
-- [X] Fix get involved
-- [X] Update gov Proposal Protocol 
-- [X] Fix DGP Protocol list of proposal types
-- [X] Fix DGP 1.3 final draft submission, snapshot voting needs to be addressed
-- [ ] becoming a member, need to solidify this flow
-- [ ] fill up governance.md with pictures depicting user experience
-- [ ] Organize better into seperate pages, finish ToC
-- [ ] Proofread (someone that isnt theo pls)

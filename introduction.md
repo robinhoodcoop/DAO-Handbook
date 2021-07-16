@@ -21,7 +21,7 @@ The second aspect in which RHC provides an opportunity for mutual aid resides in
 As the DAO's investments realize profit, the specified portion of capital is automatically redirected into the Commons Fund, providing the DAO with the ability to receive grant proposals from non-members and members alike and provide awards to projects based upon the value they add to the commons as decided by the democratic voice of the members through the DAO Governance Protocol, a democratic and transparent governance system.
 
 
-### Motivation of RHC as a DAO
+## Motivation of RHC as a DAO
 
 We have been in contact with the Finnish Financial Supervisory Authority (Finanssivalvonta, FIN-FSA) since 2015. A new round of discussions started in the spring 2020. After discussions about the aims, structure and next steps of the coop, FIN-FSA informed us (15.9.2020) of their detailed analysis and a provided a conclusion that the coop would need to register or apply for a licence as a so-called Alternative Investment Fund (AIF; which has a specific legal definition) or change its functioning so that the assets can be directly managed by all the members on a day-to-day basis i.e. that there is no centralized “third party” who is providing the investment product/service for the members, there is no exchange service etc. 
 
